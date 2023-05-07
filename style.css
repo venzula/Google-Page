@@ -4,6 +4,8 @@
 }
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+overflow: hidden;
+;
 }
 .nav-left {
   display: flex;
@@ -31,7 +33,7 @@ li,
   margin-right: 15px;
 }
 .google-section {
-  height: 70vh;
+  height: 87vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,4 +61,51 @@ input {
   position: relative;
   right: 30px;
   top: 2px;
+}
+button{
+    padding: 4px 10px;
+    margin-top: 40px;
+}
+footer{
+    height: 30vh;
+   text-align: center;
+}
+.footer-menu{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+.footer-left{
+    display: flex;
+}
+.footer-right{
+    display: flex;
+}
+@media screen and (max-width:768px) {
+   body{
+    overflow: scroll;
+   }
+    input{
+        width: 300px;
+    }
+    .footer-left{
+        flex-direction: column;
+    }
+    .footer-right{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:480px) {
+   body{
+    overflow: scroll;
+   }
+    input{
+        width: 300px;
+    }
+    .footer-left{
+        flex-direction: column;
+    }
+    .footer-right{
+        flex-direction: column;
+    }
 }
